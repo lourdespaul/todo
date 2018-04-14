@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <link rel="stylesheet" href="./bower_components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="./bower_components/material-design-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="./index.css">
+    <!-- <script src = "./bower_components/materialize/dist/js/materialize.min.js"></script> -->
+
+    <!-- <="./bower_components/materialize/sass/materialize.scss"> -->
+    <title>TODO</title>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Todo</a>
+        <ul class="right">
+          <li id = "close"><a onclick="Close()"><i  class="material-icons">close</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <center>
+              <form id="add">
+                <div class="row">
+                  <div class="input-field col s12">
+                     <i class="material-icons prefix">mode_edit</i>
+                    <input id="text" name="text" type="text" class="validate">
+                  </div>
+                </div>
+              </form>
+            </center>
+          </li>
+          <div id="list"></div>
+        </ul>
+      </div>
+    </section>
+    <script src = "./script.js"></script>
+  </body>
+</html>
